@@ -4,6 +4,9 @@ Changelog
 1.2.24 (unreleased)
 -------------------
 
+- WEB-3332: Add missing title attribute on faceted navigation links
+  [mpeeters]
+
 - Add missing event_booking view to Event view_methods
   Detected because Solgema.fullcalendar uninstallation was broken
   [laulaz]

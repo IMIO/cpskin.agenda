@@ -9,7 +9,7 @@
       url context/absolute_url|string:#;
       view_url python:(url and useView and url + '/view') or url;"
      tal:attributes="href view_url;
-                     title description">
+                     title title;">
 
     <div class="pageleadImage"
          style=""

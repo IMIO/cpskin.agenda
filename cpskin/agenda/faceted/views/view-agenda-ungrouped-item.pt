@@ -14,7 +14,7 @@
       show_descriptions python: folderview.show_descriptions(collection);
       show_day_and_month python: folderview.show_day_and_month(collection);"
      tal:attributes="href view_url;
-                     title description">
+                     title title;">
 
     <div class="pageleadImage"
          style=""
