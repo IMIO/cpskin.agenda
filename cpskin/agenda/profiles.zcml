@@ -36,4 +36,12 @@
         handler="cpskin.agenda.upgrades.upgrade_1002_to_1003"
         profile="cpskin.agenda:default"/>
 
+    <genericsetup:upgradeStep
+        title="Upgrade cpskin.agenda to 1004"
+        description="Adapt format for daterange widget in faceted navigation"
+        source="1003"
+        destination="1004"
+        handler="cpskin.agenda.upgrades.upgrade_to_1004_daterange_widget"
+        profile="cpskin.agenda:default"/>
+
 </configure>

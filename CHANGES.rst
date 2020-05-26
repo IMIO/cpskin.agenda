@@ -4,6 +4,9 @@ Changelog
 1.2.24 (unreleased)
 -------------------
 
+- WEB-3332: Migrate faceted navigations with agenda view to fix daterange date format
+  [mpeeters]
+
 - WEB-3332: Add missing title attribute on faceted navigation links
   [mpeeters]
 
