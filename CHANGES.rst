@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.2.24 (unreleased)
--------------------
+1.3.0 (2020-05-26)
+------------------
 
 - WEB-3332: Migrate faceted navigations with agenda view to fix daterange date format
   [mpeeters]
