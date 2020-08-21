@@ -4,7 +4,8 @@ Changelog
 1.3.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- WEB-3397 : Display the number of result on faceted view
+  [mpeeters]
 
 
 1.3.0 (2020-05-26)

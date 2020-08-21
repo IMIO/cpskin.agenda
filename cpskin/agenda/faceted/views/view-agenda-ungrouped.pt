@@ -16,6 +16,10 @@
         b_start python:request.get('b_start[]', 0) or request.get('b_start', 0);
         batch python:isinstance(events, Batch) and events or Batch(events, self.perPage(), int(b_start), orphan=2);">
 
+        <div class="counter" i18n:domain="cpskin" i18n:translate="">
+          <span i18n:name="count" tal:content="batch/sequence_length"></span> result(s)
+        </div>
+
         <div metal:use-macro="context/batch_macros/macros/navigation" />
 
         <div class="faceted-agenda-ungrouped-view">
