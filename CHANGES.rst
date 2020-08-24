@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.1 (unreleased)
+1.3.1 (2020-08-24)
 ------------------
 
 - WEB-3397 : Display the number of result on faceted view
