@@ -24,7 +24,7 @@ def addCatalogIndexes(portal):
     """
     catalog = api.portal.get_tool('portal_catalog')
     indexes = catalog.indexes()
-    wanted = (('event_dates', 'FieldIndex'),)
+    wanted = (('event_dates', 'KeywordIndex'),)
     indexables = []
     for name, meta_type in wanted:
         if name not in indexes:

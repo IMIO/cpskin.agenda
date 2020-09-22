@@ -4,7 +4,8 @@ Changelog
 1.3.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- WEB-3295: Fix daterange query in agenda faceted view
+  [laulaz]
 
 
 1.3.2 (2020-09-14)

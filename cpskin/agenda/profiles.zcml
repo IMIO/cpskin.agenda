@@ -44,4 +44,12 @@
         handler="cpskin.agenda.upgrades.upgrade_to_1004_daterange_widget"
         profile="cpskin.agenda:default"/>
 
+    <genericsetup:upgradeStep
+        title="Upgrade cpskin.agenda to 1005"
+        description="Change index type for event_dates to fix faceted search"
+        source="1004"
+        destination="1005"
+        handler="cpskin.agenda.upgrades.upgrade_to_1005_event_dates_index"
+        profile="cpskin.agenda:default"/>
+
 </configure>

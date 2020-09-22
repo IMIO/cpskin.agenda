@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from collective.js.jqueryui.viewlet import L10nDatepicker
 from cpskin.locales import CPSkinMessageFactory as _
+from datetime import timedelta
 from eea.facetednavigation.widgets.daterange.widget import Widget as BaseWidget
 
 
@@ -22,11 +23,12 @@ class Widget(BaseWidget, L10nDatepicker):
         index, params = query.popitem()
         start = params['query'][0]
         end = params['query'][1]
+
+        startDate = start.asdatetime().date()
+        # Faceted use previous day at 23:59:59 for its query
+        startDate = startDate + timedelta(days=1)
+        endDate = end.asdatetime().date()
+
         query = {}
-        # All events from start date ongoing:
-        # The minimum end date of events is the date from which we search.
-        query['end'] = {'query': start, 'range': 'min'}
-        # All events until end date:
-        # The maximum start date must be the date until we search.
-        query['start'] = {'query': end, 'range': 'max'}
+        query['event_dates'] = {'query': (startDate, endDate), 'range': 'min:max'}
         return query
