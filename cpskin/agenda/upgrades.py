@@ -45,3 +45,11 @@ def upgrade_to_1004_daterange_widget(context):
             values["usePloneDateFormat"] = True
             criterion.criteria[position] = Criterion(**values)
             criterion.criteria._p_changed = 1
+
+
+def upgrade_to_1005_event_dates_index(context):
+    catalog = api.portal.get_tool("portal_catalog")
+    catalog.delIndex("event_dates")
+    catalog.addIndex("event_dates", "KeywordIndex")
+    catalog.manage_reindexIndex(ids=["event_dates"])
+    logger.info("Converted event_dates index to KeywordIndex")
