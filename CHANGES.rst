@@ -33,6 +33,7 @@ Changelog
 - Add missing event_booking view to Event view_methods
   Detected because Solgema.fullcalendar uninstallation was broken
   [laulaz]
+
 - ZCML refacoring
   [laulaz]
 
