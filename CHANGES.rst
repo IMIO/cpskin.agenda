@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.3 (unreleased)
+1.3.3 (2020-09-25)
 ------------------
 
 - WEB-3295: Fix daterange query in agenda faceted view
