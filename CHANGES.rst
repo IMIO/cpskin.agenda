@@ -4,7 +4,8 @@ Changelog
 1.3.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Upload to pypi.org.
+  [bsuttor]
 
 
 1.3.3 (2020-09-25)
@@ -440,3 +441,4 @@ zgeo_geometry_value is now in catalog with location related_contact value.
 ----------------
 
 - Initial release
+
