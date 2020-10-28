@@ -191,7 +191,7 @@ Changelog
 - Format phone for event summary view without related contacts.
   [bsuttor]
 
-- Add target="_blank" to event_url in summary view.
+- Add target _blank to event_url in summary view.
   [bsuttor]
 
 
@@ -234,7 +234,7 @@ Changelog
 ------------------
 
 - Related Contact location is now used to get coordinates from event with a location.
-zgeo_geometry_value is now in catalog with location related_contact value.
+  zgeo_geometry_value is now in catalog with location related_contact value.
   [bsuttor]
 
 
