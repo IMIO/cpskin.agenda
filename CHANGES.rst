@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.4 (unreleased)
+1.3.4 (2020-10-28)
 ------------------
 
 - Upload to pypi.org.
